@@ -1,0 +1,12 @@
+<h2>Study about {{ country.name }}</h2>
+
+<form (ngSubmit)="submitAnswers()">
+    <p>Use the Wikipedia link provided to you in the previous page to find some information about this country.</p>
+    <div *ngFor="let question of questions; let i = index"><br><br>
+        <label>{{ question }}</label><br>
+        <input type="text" [(ngModel)]="answers[i]" name="answer{{i}}" class="form-control mb-2" required />
+    </div><br><br>
+    <button type="submit" class="btn btn-success">Sava Answers</button>
+</form>
+
+<a [routerLink]="['/']" class="btn btn-secondary">Back to List</a>

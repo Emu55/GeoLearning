@@ -1,0 +1,36 @@
+.navbar {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(180deg, #007bff, #0056b3);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffdd57;
+}
+
+.nav-item .nav-link {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.61);
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    margin-left: 25px;
+}
